@@ -15,7 +15,7 @@ app.use(bodyParser.urlencoded({limit:"20mb",extended:true}));
 app.use(cors());
 app.use('/students',StudentRoutes)
 
-const CONNECTION_URL = "mongodb+srv://sam:sam@cluster0.oylio.mongodb.net/StudentCard?retryWrites=true&w=majority"
+const CONNECTION_URL = "mongodb+srv://username:password@cluster0.oylio.mongodb.net/StudentCard?retryWrites=true&w=majority"
 
 const PORT = process.env.PORT || 5000
 
